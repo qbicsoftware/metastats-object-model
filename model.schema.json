@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/qbicsoftware/metastats-object-model/master/model_schema.json",
+    "title": "MetaStats Entry",
+    "description": "A MetaStats object representation for statistical analysis",
+    "type": "object",
+    "properties": {
+        "qbicId": {
+            "description": "QBiC internal identifier for sample entities",
+            "type": "string",
+            "pattern": "Q[A-X0-9]{4}[0-9]{3}[A-X0-9]{2}"
+        }
+    }
+}
