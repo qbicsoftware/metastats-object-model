@@ -6,6 +6,7 @@ jobs:
     name: Validation
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: list workspace
         run: 'ls -la $GITHUB_WORKSPACE'
       - name: Install SDKMAN
