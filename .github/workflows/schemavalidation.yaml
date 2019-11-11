@@ -6,8 +6,12 @@ jobs:
     name: Validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: list workspace
-        run: 'ls -la $GITHUB_WORKSPACE'
+      - uses: actions/checkout@v1 
       - name: Install SDKMAN
-        run: 'bash $GITHUB_WORKSPACE/setupenv.sh'
+        run: 'curl -s get.sdkman.io | bash'
+      - name: Load SDKMAN
+        run: 'export SDKMAN_DIR="/Users/sven1103/.sdkman" && source "$HOME/.sdkman/bin/sdkman-init.sh"'
+      - name: Install Groovy
+        run: 'sdk install groovy'
+      - name: Test model schema integrity
+        run: 'groovy $GITHUB_WORKSPACE/Validate.groovy'
