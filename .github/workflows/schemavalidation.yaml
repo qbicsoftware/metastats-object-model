@@ -6,5 +6,9 @@ jobs:
     name: Validation
     runs-on: ubuntu-latest
     steps:
+      - name: Install SDKMAN
+        run: 'curl -s get.sdkman.io | bash && source "$HOME/.sdkman/bin/sdkman-init.sh"'
+      - name: Install Groovy
+        run: 'sdk install groovy'
       - name: Test model schema integrity
         run: 'groovy Validate.groovy'
