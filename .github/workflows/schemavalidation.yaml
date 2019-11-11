@@ -13,5 +13,7 @@ jobs:
         run: 'source "$HOME/.sdkman/bin/sdkman-init.sh"'
       - name: Install Groovy
         run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install groovy'
+      - name: list
+        run: 'ls -la $GITHUB_WORKSPACE'
       - name: Test model schema integrity
         run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && groovy $GITHUB_WORKSPACE/Validate.groovy'
