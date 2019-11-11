@@ -1,0 +1,10 @@
+name: Schema Validation
+on: [push]
+
+jobs:
+  build:
+    name: Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test model schema integrity
+      - run: 'groovy Validate.groovy'
