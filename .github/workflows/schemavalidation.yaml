@@ -16,4 +16,4 @@ jobs:
       - name: list
         run: 'ls -la $GITHUB_WORKSPACE'
       - name: Test model schema integrity
-        run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && groovy $GITHUB_WORKSPACE/Validate.groovy'
+        run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && groovy $GITHUB_WORKSPACE/validate.groovy'
