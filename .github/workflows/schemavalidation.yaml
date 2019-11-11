@@ -7,10 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install SDKMAN
-        run: 'curl -s get.sdkman.io | bash'
-      - name: Load SDKMAN
-        run: 'export SDKMAN_DIR="$HOME/.sdkman" && source "$HOME/.sdkman/bin/sdkman-init.sh"'
-      - name: Install Groovy
-        run: 'sdk install groovy'
-      - name: Test model schema integrity
-        run: 'groovy Validate.groovy'
+        run: 'bash $GITHUB_WORKSPACE/setupenv.sh'
