@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: list workspace
-        run: 'll $GITHUB_WORKSPACE'
+        run: 'ls -la $GITHUB_WORKSPACE'
       - name: Install SDKMAN
         run: 'bash $GITHUB_WORKSPACE/setupenv.sh'
