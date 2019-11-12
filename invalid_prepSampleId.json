@@ -1,8 +1,8 @@
 {
-    "samplePreparationId": "QTEST001AE",
+    "samplePreparationId": "TEST001AE",
     "sequencingFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
-    "sampleGroup": "QTESTENTITY-1",
+    "sampleGrouping": "QTESTENTITY-1",
     "species": "Homo Sapiens",
     "extractCode":  "QTESTE3",
     "gender": "MALE",

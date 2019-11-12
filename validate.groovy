@@ -19,9 +19,105 @@ class ValidateSpecification extends Specification {
         schema = SchemaLoader.load(rawSchema)
     }
 
-    def 'this should throw an exception'() {
+    def 'a malformatted preparation sample id should throw a validation exception'() {
         when:
-        schema.validate(new JSONObject(new File("./invalid_example.json").text)) // throws a ValidationException if this object is invalid
+        schema.validate(new JSONObject(new File("./invalid_prepSampleId.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted sequencing facility id  should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_seqFacilityId.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted sample name id should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_sampleName.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted entity sample id should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_sampleGroup.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted species specification should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_species.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted extract sample id should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_extractCode.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted gender specification should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_gender.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted tissue specification should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_tissue.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted analyte type  should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_analyte.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted RIN/DIN should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_integrityNumber.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted sample id  should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_condition.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted filename should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_fileName.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'a malformatted specification of the sequencing device should throw a validation exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_seqDevice.json").text)) // throws a ValidationException if this object is invalid
 
         then:
         org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
