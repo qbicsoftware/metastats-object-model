@@ -5,12 +5,12 @@
     "description": "A MetaStats object representation for statistical analysis",
     "type": "object",
     "properties": {
-        "prepSampleId": {
+        "samplePreparationId": {
             "description": "QBiC internal identifier for preparation samples",
             "type": "string",
             "pattern": "Q[A-X0-9]{4}[0-9]{3}[A-X0-9]{2}"
         },
-        "seqFacilityId": {
+        "sequencingFacilityId": {
             "description": "Name of sample given by the Sequencing Facility",
             "type": "string"
         },
@@ -58,7 +58,7 @@
             "description": "Name of the data files for the sample",
             "type": "string"
         },
-        "seqDevice": {
+        "sequencingDevice": {
             "description": "Name of the sequencer device",
             "type": "string"
         }

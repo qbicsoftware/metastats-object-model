@@ -1,6 +1,6 @@
 {
-    "qbicId": "TEST001AE",
-    "seqFacilityId":"XXXXXXX",
+    "samplePreparationId": "TEST001AE",
+    "sequencingFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
     "sampleGrouping": "QTESTENTITY-1",
     "species": "Homo Sapiens",
@@ -11,5 +11,5 @@
     "integrityNumber": "1",
     "condition": "mutant",
     "fileName": "QTEST_XXXXXXX.fastq",
-    "seqDevice": "Illumina Device 123"
+    "sequencingDevice": "Illumina Device 123"
 }

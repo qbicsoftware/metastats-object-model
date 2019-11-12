@@ -1,5 +1,5 @@
 {
-    "prepSampleId": "QTEST001AE",
+    "samplePreparationId": "QTEST001AE",
     "seqFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
     "sampleGroup": "QTESTENTITY-1",
