@@ -6,9 +6,61 @@
     "type": "object",
     "properties": {
         "qbicId": {
-            "description": "QBiC internal identifier for sample entities",
+            "description": "QBiC internal identifier for preparation samples",
             "type": "string",
             "pattern": "Q[A-X0-9]{4}[0-9]{3}[A-X0-9]{2}"
+        },
+        "seqFacilityId": {
+            "description": "Name of the Sequencing Facility",
+            "type": "string"
+        },
+        "sampleName": {
+            "description": "ID of the sample written on the tube",
+            "type": "string"
+        },
+        "sampleGrouping": {
+            "description": "Grouping of samples based on shared QBiC internal identifier for entity samples",
+            "type": "string",
+            "pattern": "Q[A-X0-9]{4}ENTITY-[1-9][0-9]*"
+        },
+        "species": {
+            "description": "Scientific name of organism(s) from which the biological material was derived.",
+            "type": "string"
+        },
+        "extractCode": {
+            "description": "QBiC internal identifier for extract samples",
+            "type": "string",
+            "pattern": "Q[A-X0-9]{4}E[1-9][0-9]*"
+        },
+        "gender": {
+            "description": "Gender of the species of the biological material (if available)",
+            "type": "string",
+            "pattern": "MALE|FEMALE"
+        },
+        "tissue": {
+            "description": "Biological material of the sample like muscle or leaf",
+            "type": "string"
+        },
+        "analyte": {
+            "description": "Type of molecule extracted from biological material",
+            "type": "string"
+        },
+        "integrityNumber": {
+            "description": "RIN or DIN of the biological material",
+            "type": "integer",
+            "pattern": "[1-9]|10"
+        },
+        "condition": {
+            "description": "Sample group characteristic",
+            "type": "string"
+        },
+        "fileName": {
+            "description": "Name of the data files for the sample",
+            "type": "string"
+        },
+        "seqDevice": {
+            "description": "Name of the sequencer device",
+            "type": "string"
         }
     }
 }
