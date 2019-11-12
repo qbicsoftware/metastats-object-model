@@ -19,9 +19,105 @@ class ValidateSpecification extends Specification {
         schema = SchemaLoader.load(rawSchema)
     }
 
-    def 'this should throw an exception'() {
+    def 'qbicID exception'() {
         when:
-        schema.validate(new JSONObject(new File("./invalid_example.json").text)) // throws a ValidationException if this object is invalid
+        schema.validate(new JSONObject(new File("./invalid_qbicId.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'seqFacilityId exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_seqFacilityId.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'sampleName exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_sampleName.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'sampleGroup exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_sampleGroup.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'species exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_species.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'extractCode exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_extractCode.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'gender exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_gender.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'tissue exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_tissue.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'analyte exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_analyte.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'integrityNumber exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_integrityNumber.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'condition exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_condition.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'fileName exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_fileName.json").text)) // throws a ValidationException if this object is invalid
+
+        then:
+        org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
+    }
+
+    def 'seqDevice exception'() {
+        when:
+        schema.validate(new JSONObject(new File("./invalid_seqDevice.json").text)) // throws a ValidationException if this object is invalid
 
         then:
         org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)

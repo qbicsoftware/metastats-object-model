@@ -1,8 +1,8 @@
 {
-    "qbicId": "QTEST001AE",
+    "qbicId": "TEST001AE",
     "seqFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
-    "sampleGroup": "QTESTENTITY-1",
+    "sampleGrouping": "QTESTENTITY-1",
     "species": "Homo Sapiens",
     "extractCode":  "QTESTE3",
     "gender": "MALE",

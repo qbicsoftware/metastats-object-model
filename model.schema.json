@@ -11,14 +11,14 @@
             "pattern": "Q[A-X0-9]{4}[0-9]{3}[A-X0-9]{2}"
         },
         "seqFacilityId": {
-            "description": "Name of the Sequencing Facility",
+            "description": "Name of sample given by the Sequencing Facility",
             "type": "string"
         },
         "sampleName": {
             "description": "ID of the sample written on the tube",
             "type": "string"
         },
-        "sampleGrouping": {
+        "sampleGroup": {
             "description": "Grouping of samples based on shared QBiC internal identifier for entity samples",
             "type": "string",
             "pattern": "Q[A-X0-9]{4}ENTITY-[1-9][0-9]*"
@@ -35,7 +35,7 @@
         "gender": {
             "description": "Gender of the species of the biological material (if available)",
             "type": "string",
-            "pattern": "MALE|FEMALE"
+            "pattern": "MALE|FEMALE|"
         },
         "tissue": {
             "description": "Biological material of the sample like muscle or leaf",

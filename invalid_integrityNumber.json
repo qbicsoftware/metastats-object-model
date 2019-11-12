@@ -8,7 +8,7 @@
     "gender": "MALE",
     "tissue": "Cell Line",
     "analyte": "RNA",
-    "integrityNumber": "1",
+    "integrityNumber": "100",
     "condition": "mutant",
     "fileName": "QTEST_XXXXXXX.fastq",
     "seqDevice": "Illumina Device 123"

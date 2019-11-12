@@ -1,0 +1,15 @@
+{
+  "qbicId": "QTEST001AE",
+  "seqFacilityId":"XXXXXXX",
+  "sampleName": "YYYYYYY",
+  "sampleGroup": "QTESTENTITY-1",
+  "species": "Homo Sapiens",
+  "extractCode":  "QTESTE3",
+  "gender": "MALE",
+  "tissue": "Cell Line",
+  "analyte": null,
+  "integrityNumber": "1",
+  "condition": "mutant",
+  "fileName": "QTEST_XXXXXXX.fastq",
+  "seqDevice": "Illumina Device 123"
+}
