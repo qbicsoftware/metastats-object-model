@@ -18,8 +18,8 @@
             "description": "ID of the sample written on the tube",
             "type": "string"
         },
-        "sampleGroup": {
-            "description": "Grouping of samples based on shared QBiC internal identifier for entity samples",
+        "individual": {
+            "description": "Individual living organism or cell line",
             "type": "string",
             "pattern": "Q[A-X0-9]{4}ENTITY-[1-9][0-9]*"
         },

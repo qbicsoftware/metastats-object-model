@@ -45,7 +45,7 @@ class ValidateSpecification extends Specification {
 
     def 'a malformatted entity sample id should throw a validation exception'() {
         when:
-        schema.validate(new JSONObject(new File("./invalid_sampleGroup.json").text)) // throws a ValidationException if this object is invalid
+        schema.validate(new JSONObject(new File("./invalid_individual.json").text)) // throws a ValidationException if this object is invalid
 
         then:
         org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
