@@ -9,11 +9,7 @@ jobs:
       - uses: actions/checkout@v1 
       - name: Install SDKMAN
         run: 'curl -s get.sdkman.io | bash'
-      - name: Load SDKMAN
-        run: 'source "$HOME/.sdkman/bin/sdkman-init.sh"'
       - name: Install Groovy
         run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install groovy'
-      - name: list
-        run: 'ls -la $GITHUB_WORKSPACE'
       - name: Test model schema integrity
         run: 'source "$HOME/.sdkman/bin/sdkman-init.sh" && groovy $GITHUB_WORKSPACE/validate.groovy'
