@@ -15,7 +15,7 @@
             "type": "string"
         },
         "sampleName": {
-            "description": "ID of the sample written on the tube",
+            "description": "Name of the sample written on the tube (given by the customer)",
             "type": "string"
         },
         "individual": {
@@ -62,6 +62,7 @@
         "sequencingDevice": {
             "description": "Name of the sequencer device",
             "type": "string"
-        }
+        },
+        "required": [ "species"]
     }
 }

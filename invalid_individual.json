@@ -2,7 +2,7 @@
   "samplePreparationId": "QTEST001AE",
   "sequencingFacilityId":"XXXXXXX",
   "sampleName": "YYYYYYY",
-  "sampleGroup": "TEST-1",
+  "individual": "TEST-1",
   "species": "Homo Sapiens",
   "extractCode":  "QTEST001AS",
   "sex": "MALE",
