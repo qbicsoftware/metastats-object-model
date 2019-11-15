@@ -67,9 +67,9 @@ class ValidateSpecification extends Specification {
         org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)
     }
 
-    def 'a malformatted gender specification should throw a validation exception'() {
+    def 'a malformatted sex specification should throw a validation exception'() {
         when:
-        schema.validate(new JSONObject(new File("./invalid_gender.json").text)) // throws a ValidationException if this object is invalid
+        schema.validate(new JSONObject(new File("./invalid_sex.json").text)) // throws a ValidationException if this object is invalid
 
         then:
         org.everit.json.schema.ValidationException exception = thrown(org.everit.json.schema.ValidationException)

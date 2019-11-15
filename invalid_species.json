@@ -5,7 +5,7 @@
   "sampleGroup": "QTESTENTITY-1",
   "species": null,
   "extractCode":  "QTESTE3",
-  "gender": "MALE",
+  "sex": "MALE",
   "tissue": "Cell Line",
   "analyte": "RNA",
   "integrityNumber": "1",

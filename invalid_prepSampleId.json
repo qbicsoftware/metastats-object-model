@@ -5,7 +5,7 @@
     "sampleGrouping": "QTESTENTITY-1",
     "species": "Homo Sapiens",
     "extractCode":  "QTESTE3",
-    "gender": "MALE",
+    "sex": "MALE",
     "tissue": "Cell Line",
     "analyte": "RNA",
     "integrityNumber": "1",
