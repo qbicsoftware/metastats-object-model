@@ -4,11 +4,11 @@
     "sampleName": "YYYYYYY",
     "sampleGroup": "QTESTENTITY-1",
     "species": "Homo Sapiens",
-    "extractCode":  "QTESTE3",
+    "extractCode":  "QTEST001AS",
     "sex": "MALE",
     "tissue": "Cell Line",
     "analyte": "RNA",
-    "integrityNumber": "1",
+    "integrityNumber": 1,
     "condition": null,
     "fileName": "QTEST_XXXXXXX.fastq",
     "sequencingDevice": "Illumina Device 123"

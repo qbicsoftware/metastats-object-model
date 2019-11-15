@@ -35,7 +35,7 @@
         "sex": {
             "description": "Sex of the species of the biological material (if available)",
             "type": "string",
-            "pattern": "MALE|FEMALE|"
+            "pattern": "MALE|FEMALE|male|female|^$"
         },
         "tissue": {
             "description": "Biological material of the sample like muscle or leaf",
@@ -48,7 +48,8 @@
         "integrityNumber": {
             "description": "RIN or DIN of the biological material",
             "type": "integer",
-            "pattern": "[1-9]|10"
+            "minimum": 0,
+            "maximum": 10
         },
         "condition": {
             "description": "Sample group characteristic",
