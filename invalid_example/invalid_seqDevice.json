@@ -9,7 +9,7 @@
   "tissue": "vomit",
   "analyte": "RNA",
   "integrityNumber": 1,
-  "condition": "mutant",
+  "conditions": [{"label":"tumor","value":"tumor"},{"label":"tumor","value":"tumor"}],
   "fileName": "QTEST_XXXXXXX.fastq",
   "sequencingDevice": null
 }

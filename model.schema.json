@@ -113,9 +113,23 @@
             "minimum": 0,
             "maximum": 10
         },
-        "condition": {
+        "conditions": {
             "description": "Sample group characteristic",
-            "type": "string"
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["label","value"]
+                }
+            ]
         },
         "fileName": {
             "description": "Name of the data files for the sample",
@@ -128,5 +142,4 @@
         }
     },
     "required": ["species"]
-
 }
