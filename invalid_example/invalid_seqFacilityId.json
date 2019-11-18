@@ -1,15 +1,15 @@
 {
   "samplePreparationId": "QTEST001AE",
-  "sequencingFacilityId":"XXXXXXX",
+  "sequencingFacilityId": false,
   "sampleName": "YYYYYYY",
   "individual": "QTESTENTITY-1",
-  "species": "Homo Sapiens",
+  "species": "Homo sapiens",
   "extractCode":  "QTEST001AS",
   "sex": "MALE",
-  "tissue": "Cell Line",
+  "tissue": "Vomit",
   "analyte": "RNA",
   "integrityNumber": 1,
   "condition": "mutant",
   "fileName": "QTEST_XXXXXXX.fastq",
-  "sequencingDevice": null
+  "sequencingDevice": "Illumina Device"
 }

@@ -3,13 +3,13 @@
   "sequencingFacilityId":"XXXXXXX",
   "sampleName": "YYYYYYY",
   "individual": "QTESTENTITY-1",
-  "species": null,
+  "species": "Homo sapiens",
   "extractCode":  "QTEST001AS",
   "sex": "MALE",
-  "tissue": "Cell Line",
+  "tissue": "vomit",
   "analyte": "RNA",
   "integrityNumber": 1,
   "condition": "mutant",
   "fileName": "QTEST_XXXXXXX.fastq",
-  "sequencingDevice": "Illumina Device 123"
+  "sequencingDevice": null
 }

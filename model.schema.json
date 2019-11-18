@@ -24,8 +24,48 @@
             "pattern": "Q[A-X0-9]{4}ENTITY-[1-9][0-9]*"
         },
         "species": {
-            "description": "Scientific name of organism(s) from which the biological material was derived.",
-            "type": "string"
+            "description": "Scientific name of organism(s) from which the biological material was derived (vocabulary)",
+            "type": "string",
+            "enum": ["Zea mays", "Vitis vinifera", "Vinca major", "Vibrio cholerae", "Vibrio campbellii", "Vaccinia virus", "Unidentified", "Tuber uncinatum",
+                "Tuber sp.", "Tuber sinense", "Tuber melanosporum", "Tuber magnatum", "Tuber indicum", "Tuber himalayense", "Tuber brumale var. moschatum",
+                "Tuber brumale", "Tuber borchii", "Tuber aestivum", "Triticum aestivum", "Theobroma cacao", "Teucrium chamaedrys", "Tagetes erecta",
+                "Synechocystis sp. PCC 6803", "Sus scrofa", "Streptomyces lividans", "Streptomyces hawaiiensis", "Streptomyces coelicolor",
+                "Staphylococcus epidermidis", "Staphylococcus aureus strain NCTC 8325", "Staphylococcus aureus", "Stachys byzantina", "Sorghum bicolor",
+                "Sorangium cellulosum strain So ce 56", "Solanum tuberosum", "Solanum lycopersicum", "Silene", "Shigella flexneri","Seseli libanotis",
+                "Secale cereale", "Schizosaccharomyces pombe","Schizosaccharomyces japonicus", "Sanicula odorata","Salvia officinalis","Salpiglossis sinuata",
+                "Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344", "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2",
+                "Saccharomyces cerevisiae","Roseburia hominis","Rosa wichurana", "Rhodobacter sphaeroides strain 2.4.1","Rattus norvegicus",
+                "Ralstonia eutropha H16", "Pythium aphanidermatum", "Pseudomonas fluorescens SBW25","Pseudomonas aeruginosa strain PAO1",
+                "Pseudomonas aeruginosa RP73", "Pseudomonas aeruginosa","Pristionchus pacificus", "Physalis peruviana", "Physalis alkekengi",
+                "Phlomis viscosa", "Petunia axillaris", "Petroselinum crispum","Pectobacterium carotovorum subsp. carotovorum", "Pasteuria ramosa",
+                "Paramecium tetraurelia", "Ovis aries","Other", "Oryza sativa japonica", "Oryza sativa", "Ocimum basilicum", "Nicotiana tabacum",
+                "Nicotiana rustica", "Nicotiana longiflora","Nicotiana benthamiana", "Nerium oleander","Mycobacterium tuberculosis strain H37Rv",
+                "Mus musculus polyomavirus 1", "Mus musculus","Monodelphis domestica", "Microcystis aeruginosa NIES-843","Microcystis aeruginosa NIES-44",
+                "Methanothermobacter thermautotrophicus", "Methanosarcina mazei","Methanocaldococcus jannaschii", "Metagenomes", "Mentha x piperita",
+                "Melittis melissophyllum", "Melissa officinalis", "Melipona quadrifasciata", "Matthiola incana", "Mandragora officinarum", "Malus domestica",
+                "Macrotermes bellicosus", "Macrostomum lignano", "Macaca mulatta", "Lysobacter sp. Root690", "Lolium perenne", "Levisticum officinale",
+                "Leonurus cardiaca", "Legionella pneumophila", "Lavandula canariensis","Lactococcus lactis ssp. cremoris", "Kluyveromyces lactis",
+                "Juglans regia x Juglans nigra", "Juglans regia","Juglans nigra", "Juglans microcarpa", "Juglans major", "Juglans cinerea", "Juglans ailantifolia",
+                "Isatis tinctoria", "Influenza B virus", "Influenza A virus", "Iberis sempervirens", "Human papillomavirus type 16", "Hordeum vulgare",
+                "Homo sapiens", "Helichrysum arenarium", "Haplochromis burtoni", "Glycine max", "Gluconobacter oxydans 621H", "Gasterosteus aculeatus aculeatus",
+                "Gallus Gallus", "Galleria mellonella", "Forficula auricularia", "Foeniculum vulgare", "Eupatorium cannabinum", "Escherichia coli strain K12 MG1655",
+                "Escherichia coli strain K12 DH10B", "Escherichia coli O157:H7 Sakai", "Escherichia coli", "Erysimum scoparium", "Erysimum cheiri",
+                "Equus caballus", "Ephestia kuehniella", "Ephestia elutella", "Enterobacteria phage phiX174", "Echinacea purpurea", "E. coli nissle",
+                "Drosophila melanogaster", "Dolichotis patagonum", "Dianthus", "Descurainia millefolia", "Daphnia pulex", "Daphnia Magna",
+                "Danio rerio", "Dahlia merckii", "Cuscuta reflexa", "Cupriavidus metallidurans CH34","Cricetulus griseus", "Corylus spp.", "Corylus maxima",
+                "Corylus avellana", "Coriandrum sativum", "Cichlidae", "Centaurea montana", "Cavia aperea", "Caulobacter crescentus NA1000", "Caulobacter crescentus CB15",
+                "Carya illinoiensis", "Carum carvi", "Carduus defloratus","Capsicum frutescens", "Capsicum annuum", "Capra hircus", "Canis lupus familiaris",
+                "Candidatus Caldiarchaeum subterraneum", "Calendula officinalis", "Caenorhabditis elegans", "Burkholderia thailandensis", "Burkholderia",
+                "Bupleurum falcatum", "Bupleurum canescens var. handiense", "Bunias orientalis", "Brassica oleracea var. viridis", "Brassica oleracea var. sabauda",
+                "Brassica oleracea var. ramosa", "Brassica oleracea var. oleracea", "Brassica oleracea var. medullosa", "Brassica oleracea var. italica",
+                "Brassica oleracea var. gongylodes", "Brassica oleracea var. gemmifera", "Brassica oleracea var. costata", "Brassica oleracea var. capitata",
+                "Brassica oleracea var. botrytis", "Brassica oleracea var. alboglabra", "Brassica oleracea var. albiflora", "Brassica oleracea",
+                "Brassica napus var. napus Rapeseed", "Brassica napus subsp. rapifera", "Brassica napus", "Brachypodium distachyon", "Bos taurus",
+                "Bos indicus", "Bombus terrestris", "Bacillus subtilis strain 168", "Bacillus cereus strain ATCC 10987", "Avena sativa", "Aurinia saxatilis",
+                "Athamanta cretensis", "Astrantia major", "Asparagus officinalis", "Asclepias syriaca", "Artemisia absinthium", "Artemisia abrotanum",
+                "Arabidopsis thaliana", "Apis mellifera mellifera", "Apis mellifera", "Anabaena variabilis", "Anabaena sp. PCC 7120 (Nostoc sp. PCC 7120)",
+                "Amycolatopsis japonica", "Amphilophus (nicaraguan)","Ambrosia artemisiifolia","Allium ampeloprasum", "Ajuga reptans","Agrobacterium tumefaciens",
+                "Acinetobacter baumannii AYE", "Acinetobacter baumannii AB5075","Acinetobacter baumannii","Achillea millefolium"]
         },
         "extractCode": {
             "description": "QBiC internal identifier for extract samples",
@@ -39,11 +79,33 @@
         },
         "tissue": {
             "description": "Biological material of the sample like muscle or leaf",
-            "type": "string"
+            "type": "string",
+            "enum": ["unknown tissue", "normal tissue", "iPSC", "cortical neurons", "benign tissue", "Whole Blood", "Vomit", "Vitreous humour",
+                "Uterus", "Uterine tube", "Urine", "Urinary bladder", "Ureters", "Unspecified Tumor Tissue", "Tumor tissue", "Tumor Lysate",
+                "Trachea", "Tongue", "Thyroid gland", "Thymus", "Testis", "Tears","Taproot", "Synovial fluid", "Sweat", "Substantia nigra",
+                "Substantia Nigra pars compacta", "Stomach", "Stem Cells", "Stamen", "Sputum", "Sporocarp", "Spleen", "Spinal cord", "Soil",
+                "Small intestine", "Small Brain", "Skin", "Semen", "Seedling", "Seed coat", "Seed","Sebum", "Sarcoma", "Saliva", "Root",
+                "Rhizoid", "Rheum", "Retina", "Renal Cell Carcinoma","Recurrent tumor","Pus","Pulmonary Carcinoma", "Pulmonal Metastasis",
+                "Prostate gland", "Primary tumor","Primary Human Hepatocytes","Pleural fluid","Pleurae","Plant Extract","Pineal body", "Pia mater",
+                "Pharynx","Petal","Peritoneal fluid","Perilymph","Pericarp","Pericardial fluid","Parathyroid glands","Pancreatic Cancer","Pancreas",
+                "PBMC","Ovary","Ovarian Cancer","Other","Omentum","Olfactory system","Neuronal Nuclei","Nervous system","Myelon","Muscle (skeletal)",
+                "Mucus","Mouth","Mesenchyme","Meningioma","Meninges","Medulloblastoma","Mediastinum","Mammae","Mamma Carcinoma", "Mamma", "Male urethra",
+                "Lymphocyte","Lymphoblast","Lymph Node","Lymph","Lung","Liver","Leukemic Cells (ALL)","Leaf petiole","Leaf blade","Leaf","Lateral root",
+                "Larynx", "Large intestine","Kidney","Hypophysis cerebri","Hepatocellular Carcinoma (HCC)","Heparin-Plasma","Hemolymph","Heart","Head",
+                "Gonad","Glioblastoma","Glandula Sublingualis","Gastric juice","Gastric acid","Gall bladder","Full Organism","Frontal gyrus","Frontal cortex",
+                "Flower","Fibroblast","Female urethra","Feces","Eye","Exudates","Ewing Sarcoma","Esophagus","Endolymph","Ear","Dura mater",
+                "Dorsal Root Ganglion", "Digesta (upper bowel)", "Digesta (lower bowel)", "Diaphragma", "Dendritic cells", "Colorectal Cancer",
+                "Colon","Chyme","Chyle","Cholangio Carcinoma (CCC)","Cerumen","Cerebrospinal fluid","Cerebellum","Central Nervous System",
+                "Cell Line","Caudate putamen","Carpel","Bronchus","Breast milk","Brain","Bone Marrow","Body fat","Blood serum","Blood platelet",
+                "Blood plasma","Bile","Benign Tumor","Axillary Bud","Arachnoid mater","Aqueous humour","Appendix", "Appendiceal Cancer",
+                "Apical meristem","Apical Bud","Aorta","Amniotic fluid","Adrenal Gland","Acute myeloid leukemia","Acute lymphoblastic leukemia",
+                "Abdomen"
+            ]
         },
         "analyte": {
             "description": "Type of molecule extracted from biological material",
-            "type": "string"
+            "type": "string",
+            "enum": ["Small Molecules","Ribosomal RNA","RNA","Proteins","Phosphoproteins","Phosphopeptides","Phospholipids","Peptides","Messenger RNA","Lipids","Glycopeptides","Glycans","DNA","Circulating free DNA","Cell Lysate","Carbohydrates"]
         },
         "integrityNumber": {
             "description": "RIN or DIN of the biological material",
@@ -61,8 +123,10 @@
         },
         "sequencingDevice": {
             "description": "Name of the sequencer device",
-            "type": "string"
-        },
-        "required": [ "species"]
-    }
+            "type": "string",
+            "enum": ["ThermoFisher Ion PGM System at Pathology (UKT)","Not specified sequencer instrument","Illumina MiSeq at MPIDB","Illumina MiSeq at IMGAG","Illumina HiSeq 2500 at unspecified lab","Illumina HiSeq 2500 at IMGAG","Illumina HiSeq 2500 at CeGaT","Illumina HiSeq 2000 at unspecified lab","Illumina HiSeq 2000 at MPIDB"]
+        }
+    },
+    "required": ["species"]
+
 }

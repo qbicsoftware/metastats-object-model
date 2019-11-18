@@ -1,15 +1,15 @@
 {
   "samplePreparationId": "QTEST001AE",
   "sequencingFacilityId":"XXXXXXX",
-  "sampleName": true,
-  "individual": "QTESTENTITY-1",
-  "species": "Homo Sapiens",
+  "sampleName": "YYYYYYY",
+  "individual": "TEST-1",
+  "species": "Homo sapiens",
   "extractCode":  "QTEST001AS",
   "sex": "MALE",
-  "tissue": "Cell Line",
+  "tissue": "Vomit",
   "analyte": "RNA",
   "integrityNumber": 1,
   "condition": "mutant",
   "fileName": "QTEST_XXXXXXX.fastq",
-  "sequencingDevice": "Illumina Device 123"
+  "sequencingDevice": "Illumina MiSeq at MPIDB"
 }
