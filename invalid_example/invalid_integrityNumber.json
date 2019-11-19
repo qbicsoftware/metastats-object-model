@@ -1,15 +1,15 @@
 {
     "samplePreparationId": "QTEST001AE",
-    "sequencingFacilityId":"XXXXXXX",
+    "seqFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
     "individual": "QTESTENTITY-1",
     "species": "Homo sapiens",
     "extractCode":  "QTEST001AS",
-    "sex": "",
+    "sex": "MALE",
     "tissue": "Vomit",
     "analyte": "RNA",
-    "integrityNumber": 1,
+    "integrityNumber": 100,
     "conditions": [{"label":"tumor","value":"tumor"},{"label":"tumor","value":"tumor"}],
     "fileName": "QTEST_XXXXXXX.fastq",
-    "sequencingDevice": "Illumina MiSeq at MPIDB"
+    "seqDevice": "Illumina MiSeq at MPIDB"
 }

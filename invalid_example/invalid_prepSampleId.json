@@ -1,11 +1,11 @@
 {
-    "samplePreparationId": "QTEST001AE",
+    "samplePreparationId": "TEST001AE",
     "sequencingFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
     "individual": "QTESTENTITY-1",
     "species": "Homo sapiens",
     "extractCode":  "QTEST001AS",
-    "sex": "",
+    "sex": "MALE",
     "tissue": "Vomit",
     "analyte": "RNA",
     "integrityNumber": 1,
