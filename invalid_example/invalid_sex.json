@@ -3,13 +3,13 @@
     "seqFacilityId":"XXXXXXX",
     "sampleName": "YYYYYYY",
     "individual": "QTESTENTITY-1",
-    "species": "Homo Sapiens",
+    "species": "Homo sapiens",
     "extractCode":  "QTEST001AS",
     "sex": "DIVERSE",
-    "tissue": "Cell Line",
+    "tissue": "Vomit",
     "analyte": "RNA",
     "integrityNumber": 1,
-    "condition": "mutant",
+    "conditions": [{"label":"tumor","value":"tumor"},{"label":"tumor","value":"tumor"}],
     "fileName": "QTEST_XXXXXXX.fastq",
-    "seqDevice": "Illumina Device 123"
+    "seqDevice": "Illumina MiSeq at MPIDB"
 }
