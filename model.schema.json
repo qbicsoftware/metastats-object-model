@@ -3,6 +3,20 @@
     "$id": "https://raw.githubusercontent.com/qbicsoftware/metastats-object-model/master/model_schema.json",
     "title": "MetaStats Entry",
     "description": "A MetaStats object representation for statistical analysis",
+    "definitions": {
+        "condition": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": ["label","value"]
+        }
+    },
     "type": "object",
     "properties": {
         "samplePreparationId": {
@@ -116,20 +130,9 @@
         "conditions": {
             "description": "Sample group characteristic",
             "type": "array",
-            "items": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "label": {
-                            "type": "string"
-                        },
-                        "value": {
-                            "type": "string"
-                        }
-                    },
-                    "required": ["label","value"]
+            "items": {
+                "$ref": "#/definitions/condition"
                 }
-            ]
         },
         "fileName": {
             "description": "Name of the data files for the sample",
